@@ -33,7 +33,7 @@ def arm_and_takeoff(aTargetAltitude):
   print ("Taking off!")
   vehicle.simple_takeoff(aTargetAltitude) # Take off to target altitude
 
-  # Check that vehicle has reached takeoff altitude
+
   while True:
     print (" Altitude: ", vehicle.location.global_relative_frame.alt) 
     #Break and return from function just below target altitude.        
@@ -53,9 +53,6 @@ def Land():
   while vehicle.armed:
     time.sleep(1)
   vehicle.close()
-
-
-#----begin programming form here
 
 
 ##-------------------------------------------------------------------------------------------------------------------------------
